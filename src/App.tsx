@@ -12,6 +12,7 @@ function App() {
   return (
     <Grid
       h='full'
+      userSelect={'none'}
       templateAreas={`" header header"
                   " main movesList"
                   " footer footer"`}
