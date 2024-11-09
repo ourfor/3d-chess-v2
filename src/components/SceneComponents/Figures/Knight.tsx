@@ -11,7 +11,7 @@ type GLTFResult = GLTF & {
 };
 
 export const Knight: FC<FiguresPropsType> = ({ position, color, selected }): JSX.Element => {
-  const { nodes } = useGLTF('Figures/knight.gltf') as GLTFResult
+  const { nodes } = useGLTF('figures/knight.gltf') as GLTFResult
   return (
     <group
       rotation={color === 'b' ? [0, 1.6, 0] : [0, -1.6, 0]}
@@ -29,4 +29,4 @@ export const Knight: FC<FiguresPropsType> = ({ position, color, selected }): JSX
   )
 }
 
-useGLTF.preload('Figures/knight.gltf')
+useGLTF.preload('figures/knight.gltf')

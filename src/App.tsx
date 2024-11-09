@@ -19,6 +19,7 @@ function App() {
       gridTemplateRows={'auto 8fr auto'}
       gridTemplateColumns={'3fr 1fr'}
       paddingTop="24px"
+      paddingBottom="24px"
       gap='1'>
       <GridItem area={'movesList'}>
         <Header gameType={gameType} sceneBackground={sceneBackground}/>

@@ -11,7 +11,7 @@ type GLTFResult = GLTF & {
 };
 
 export const Castle: FC<FiguresPropsType> = ({ position, color, selected}): JSX.Element => {
-  const { nodes } = useGLTF('Figures/castle.gltf') as GLTFResult
+  const { nodes } = useGLTF('figures/castle.gltf') as GLTFResult
   return (
     <group
       position={[position.x, 0.36, position.y]}
@@ -29,4 +29,4 @@ export const Castle: FC<FiguresPropsType> = ({ position, color, selected}): JSX.
   )
 }
 
-useGLTF.preload('Figures/castle.gltf')
+useGLTF.preload('figures/castle.gltf')

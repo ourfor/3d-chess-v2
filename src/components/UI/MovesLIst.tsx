@@ -48,7 +48,7 @@ export const MovesLIst: FC<MovesListProps> = ({ history, whoseMove, isCheck, isM
   }
 
   return (
-    <Flex as='aside' flexDir='column' h='100%' px={2} justify='center'>
+    <Flex as='aside' flexDir='column' px={2} justify='center'>
 
       {isCheck && whoseMove === 'b' && <div>Check</div>}
 

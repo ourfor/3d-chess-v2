@@ -11,7 +11,7 @@ type GLTFResult = GLTF & {
 };
 
 export const Pawn: FC<FiguresPropsType> = ({ position, color, selected}): JSX.Element => {
-  const { nodes } = useGLTF('Figures/pawn.gltf') as GLTFResult
+  const { nodes } = useGLTF('figures/pawn.gltf') as GLTFResult
   return (
     <group
       position={[position.x, 0.36, position.y]}
@@ -29,4 +29,4 @@ export const Pawn: FC<FiguresPropsType> = ({ position, color, selected}): JSX.El
   )
 }
 
-useGLTF.preload('Figures/pawn.gltf')
+useGLTF.preload('figures/pawn.gltf')

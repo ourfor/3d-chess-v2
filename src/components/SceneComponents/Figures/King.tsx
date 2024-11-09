@@ -11,7 +11,7 @@ type GLTFResult = GLTF & {
 };
 
 export const King: FC<FiguresPropsType> = ({ position, color, selected }): JSX.Element => {
-  const { nodes } = useGLTF('Figures/king.gltf') as GLTFResult
+  const { nodes } = useGLTF('figures/king.gltf') as GLTFResult
   return (
     <group
       position={[position.x, 0.36, position.y]}
@@ -28,4 +28,4 @@ export const King: FC<FiguresPropsType> = ({ position, color, selected }): JSX.E
   )
 }
 
-useGLTF.preload('Figures/king.gltf')
+useGLTF.preload('figures/king.gltf')

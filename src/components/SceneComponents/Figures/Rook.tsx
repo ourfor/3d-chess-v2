@@ -11,7 +11,7 @@ type GLTFResult = GLTF & {
 };
 
 export const Rook: FC<FiguresPropsType> = ({ position, color, selected }): JSX.Element => {
-  const { nodes } = useGLTF('Figures/rook.gltf') as GLTFResult
+  const { nodes } = useGLTF('figures/rook.gltf') as GLTFResult
   // const onFigureClick = (event: ThreeEvent<MouseEvent>) => {
   //   onFigureSelect(id, position)
   // }
@@ -31,4 +31,4 @@ export const Rook: FC<FiguresPropsType> = ({ position, color, selected }): JSX.E
   )
 }
 
-useGLTF.preload('Figures/rook.gltf')
+useGLTF.preload('figures/rook.gltf')

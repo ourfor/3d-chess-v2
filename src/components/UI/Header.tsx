@@ -62,7 +62,7 @@ export const Header: FC<HeaderProps> = ({ gameType, sceneBackground }) => {
       alignItems='center'>
       <HStack>
         <Icon as={FaChessPawn} boxSize={'2em'} />
-        <Heading as='h1' size='xl'>
+        <Heading as='h3' size='s'>
           Chess
         </Heading>
       </HStack>
