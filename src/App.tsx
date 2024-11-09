@@ -17,18 +17,14 @@ function App() {
                   " footer footer"`}
       gridTemplateRows={'auto 8fr auto'}
       gridTemplateColumns={'3fr 1fr'}
+      paddingTop="24px"
       gap='1'>
-      <GridItem area={'header'}>
-        <Header gameType={gameType} sceneBackground={sceneBackground}/>
-      </GridItem>
       <GridItem area={'movesList'}>
+        <Header gameType={gameType} sceneBackground={sceneBackground}/>
         <MovesLIst history={history} whoseMove={whoseMove} isCheck={isCheck} isMate={isMate}/>
       </GridItem>
-      <GridItem area={'main'} roundedRight='md' overflow={'hidden'}>
+      <GridItem style={{borderRadius: "0.5rem", marginLeft: "0.5rem"}} area={'main'} roundedRight='md' overflow={'hidden'}>
         <Scene />
-      </GridItem>
-      <GridItem area={'footer'}>
-        <Footer />
       </GridItem>
     </Grid>
   )
